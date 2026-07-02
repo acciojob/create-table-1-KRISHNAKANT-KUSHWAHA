@@ -13,6 +13,7 @@
 
 function insert_Row() {
     const table = document.getElementById("sampleTable");
+	const tbody = document.getElementById("tbody");
 
     // Create a new row
     const row = document.createElement("tr");
@@ -30,7 +31,7 @@ function insert_Row() {
     row.appendChild(cell2);
 
     // Insert the new row at the top of the table
-    table.insertBefore(row, table.firstChild);
+    tbody.insertBefore(row, tbody.firstChild);
     // table.insertBefore(row, table.rows[0]);
 	
 }
